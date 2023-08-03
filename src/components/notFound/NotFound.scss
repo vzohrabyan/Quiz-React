@@ -1,0 +1,24 @@
+.notFound {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-family: Poppins;
+    h1 {
+        color: #6066D0;
+        font-size: 200px;
+        font-weight: 100;
+    }
+    p {
+        color: rgb(99, 50, 33);
+        font-size: 25px;
+        font-weight: 800;
+    }
+    a {
+        text-decoration: none;
+        color: #2a2d75;
+        font-size: 25px;
+        font-weight: 800;
+    }
+}
