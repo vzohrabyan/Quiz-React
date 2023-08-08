@@ -11,13 +11,11 @@ const shuffleArray = (array) => {
 };
 
 const QuizAnswers = ({ data, qustionNumber, setQustionNumber, setCorrectAnswers, correctAnswers }) => {
-  console.log(data);
   const [answers, setAnswers] = useState([]);
   const selectedAnswer = useRef({});
   const truthyAnswer = useRef(null);
   const [isChecked, setIsChecked] = useState(false)
 
- console.log(selectedAnswer);
   const checkAnswer = async () => {
     if (selectedAnswer.current.answer === data[qustionNumber].correct_answer) {
       setCorrectAnswers((prev) => prev + 1);

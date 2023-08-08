@@ -14,13 +14,12 @@ const QuizResult = ({correctAnswers,count}) => {
         } else if (degree <= 120) {
           setMessage("Good Job");
         } else if (degree <= 150) {
-          setMessage("Wowww");
+          setMessage("Wowww");  
         } else if (degree <= 180) {
           setMessage("Awesome keep it up!");
         }
       }, [degree]);
     
-    console.log(message, degree);
   return (
     <div className='result'>
         <div className="circle-wrap" >

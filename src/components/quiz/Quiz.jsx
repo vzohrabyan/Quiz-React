@@ -15,14 +15,12 @@ const Quiz = () => {
 
   const {category} = useParams();
 
-  console.log(category);
   useEffect(() => {
     const fetchdata = async () => {
       try {
         const response = await axios.get(
           `https://opentdb.com/api.php?${category}`
         );
-        console.log(response);
         setData(response.data.results);
       } catch (error) {
         console.error('Error fetching trivia data:', error);
